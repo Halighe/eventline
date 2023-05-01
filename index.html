@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Event Line</title>
+  <script src="js/jquery.js"></script>
+  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <script defer src="js/OpenClose.js"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="js/simple-adaptive-slider.js"></script>
+    <!-- Подключаем JS калькулятора -->
+    <script defer src="js/calc.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_wrap">
+      <div class="header_body">
+        <a href="#" class="header_logo">
+          <img src="img/Logotype.svg" alt="" />
+        </a>
+        <div class="header_burger">
+          <span></span>
+        </div>
+        <nav class="header_menu">
+          <ul class="header_list">
+            <li>
+              <a href="" class="header_link">Главная</a>
+            </li>
+            <li>
+              <a href="" class="header_link">О нас</a>
+            </li>
+            <li>
+              <a href="" class="header_link">Портфолио</a>
+            </li>
+            <li>
+              <a href="" class="header_link">Услуги</a>
+            </li>
+            <li>
+              <a href="" class="header_link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main_btn">
+        <img class="arrow-left" src="./img/Arrow-left.svg" alt="">
+        <p class="main_text" href="">Вернуться на главную</p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="main_title">Собери свое торжество</p>
+    </div>
+    <!-- Разметка слайдера -->
+    <div class="itcss">
+      <div class="itcss__wrapper">
+        <div class="itcss__items">
+          <div class="itcss__item">
+            <!-- 1й слайд -->
+            <div class="itcss__item_style">
+              <!-- <div class="main_steps">
+                <div class="main__step">
+                  <p class="main__step_text">Шаг 1</p>
+                  <div class="indicator"></div>
+                </div>
+                <div class="main__step">
+                  <p class="main__step_text">Шаг 2</p>
+                  <div class="indicator"></div>
+                </div>
+                <div class="main__step">
+                  <p class="main__step_text">Шаг 3</p>
+                  <div class="indicator"></div>
+                </div>
+                <div class="main__step">
+                  <p class="main__step_text">Шаг 4</p>
+                  <div class="indicator"></div>
+                </div>
+                <div class="main__step">
+                  <p class="main__step_text">Шаг 5</p>
+                  <div class="indicator"></div>
+                </div>
+              </div> -->
+              <p class="main_subtitle">Выберите пакет пиротехнического шоу</p>
+
+              <div>
+                <div class="main_block">
+                  <div class="main__block left">
+                    <div>
+                      <img class="main__block_icon" src="img/1-base.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        <ul>
+                          <li>дорожка из фонтанов (6 шт):
+                            высота 4 м, 45 сек. горения</li>
+                          <li>2 горящих сердца</li>
+                          <li>музыкальное сопровождение </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">8500 ₽</a>
+                      <label for="checkbox-id1" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id1" />
+                        <span></span>
+                      </label>
+
+                    </div>
+                  </div>
+                  <div class="main__block middle">
+                    <div>
+                      <img class="main__block_icon" src="img/1-optimal.svg" alt="dots icon">
+                      <div class="main__block_text">
+                        <ul>
+                          <li>дорожка из фонтанов (6 шт):
+                            высота 4 м, 45 сек. горения</li>
+                          <li>2 горящих сердца</li>
+                          <li>музыкальное сопровождение </li>
+                          <li>2 вертушки на 3 лепестка</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">14500 ₽</a>
+                      <label for="checkbox-id2" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id2"/>
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="main__block right">
+                    <div>
+                      <img class="main__block_icon" src="img/1-maximal.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        <ul>
+                          <li>дорожка из фонтанов (6 шт):
+                            высота 4 м, 45 сек. горения</li>
+                          <li>2 горящих сердца</li>
+                          <li>музыкальное сопровождение </li>
+                          <li>2 вертушки на 6 лепестков</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="main__block_check">
+                      <a class="main__block_price">20500 ₽</a>
+                      <label for="checkbox-id3" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id3" />
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="main_total">
+                  <a class="main__total_text">Итого</a>
+                  <p class="main__total_price sum">0</p>
+                  <p class="main__total_price">₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itcss__item">
+            <!-- 2 слайд -->
+            <div class="itcss__item_style">
+              
+              <p class="main_subtitle">Выберите пакет пиротехнического шоу</p>
+
+              <div>
+                <div class="main_block">
+                  <div class="main__block left">
+                    <div>
+                      <img class="main__block_icon" src="img/2-1.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        <ul>
+                          <li>2 колонки
+                          <li>микшерный пульт</li>
+                          <li>микрофон </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">4000 ₽</a>
+                      <label for="checkbox-id4" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id4" />
+                        <span></span>
+                      </label>
+
+                    </div>
+                  </div>
+                  <div class="main__block middle">
+                    <div>
+                      <img class="main__block_icon" src="img/2-2.svg" alt="dots icon">
+                      <div class="main__block_text">
+                        <ul>
+                          <li>2 колонки
+                          <li>микшерный пульт</li>
+                          <li>сабвуфер</li>
+                          <li>микрофон </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">14500 ₽</a>
+                      <label for="checkbox-id5" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id5" />
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="main__block right">
+                    <div>
+                      <img class="main__block_icon" src="img/2-3.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        <ul>              
+                          <li>линейный массив</li>
+                          <li>цифровой пульт</li>
+                          <li>микрофон</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="main__block_check">
+                      <a class="main__block_price">20500 ₽</a>
+                      <label for="checkbox-id6" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id6" />
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="main_total">
+                  <a class="main__total_text">Итого</a>
+                  <p class="main__total_price sum">0</p>
+                  <p class="main__total_price">₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itcss__item">
+            <!-- 3 слайд -->
+            <div class="itcss__item_style">
+             
+              <p class="main_subtitle">Выберите пакет пиротехнического шоу</p>
+
+              <div>
+                <div class="main_block">
+                  <div class="main__block left">
+                    <div>
+                      <img class="main__block_icon" src="img/3-1.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        <ul>
+                          <li>4 тотема для светового оборудования</li>
+                          <li>интерьерная подсветка</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">13000 ₽</a>
+                      <label for="checkbox-id7" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id7" />
+                        <span></span>
+                      </label>
+
+                    </div>
+                  </div>
+                  <div class="main__block middle">
+                    <div>
+                      <img class="main__block_icon" src="img/3-2.svg" alt="dots icon">
+                      <div class="main__block_text">
+                        <ul>
+                          <li>6 тотемов для светового оборудования</li>
+                          <li>интерьерная подсветка</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">18000 ₽</a>
+                      <label for="checkbox-id8" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id8" />
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="main__block right">
+                    <div>
+                      <img class="main__block_icon" src="img/3-3.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        <ul>
+                          <li>8 тотемов для светового оборудования</li>
+                          <li>интерьерная подсветка</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="main__block_check">
+                      <a class="main__block_price">23000 ₽</a>
+                      <label for="checkbox-id9" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id9" />
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="main_total">
+                  <a class="main__total_text">Итого</a>
+                  <p class="main__total_price sum">0</p>
+                  <p class="main__total_price">₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itcss__item">
+            <!-- 4 слайд -->
+            <div class="itcss__item_style">
+              
+              <p class="main_subtitle">Выберите пакет пиротехнического шоу</p>
+
+              <div>
+                <div class="main_block">
+                  <div class="main__block left">
+                    <div>
+                      <img class="main__block_icon" src="img/4-1.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        Один из самых популярных спецэффектов на первый танец. 
+                        Вы можете выбрать конфетти на любой вкус и цвет. 
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">4000 ₽</a>
+                      <label for="checkbox-id10" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id10" />
+                        <span></span>
+                      </label>
+
+                    </div>
+                  </div>
+                  <div class="main__block middle">
+                    <div>
+                      <img class="main__block_icon" src="img/4-2.svg" alt="dots icon">
+                      <div class="main__block_text">
+                        Создаёт волнительную атмосферу и хорошо подходит для первого танца молодоженов.
+                        <ul>
+                          <li>3 минуты</li>                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main__block_check">
+                      <a class="main__block_price">10000 ₽</a>
+                      <label for="checkbox-id11" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id11" />
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="main__block right">
+                    <div>
+                      <img class="main__block_icon" src="img/4-3.svg" alt="dots icon">
+
+                      <div class="main__block_text">
+                        Один из лучших вариантов завершения свадебного вечера.
+                        <ul>
+                          <li>100 выстрелов</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="main__block_check">
+                      <a class="main__block_price">7000 ₽</a>
+                      <label for="checkbox-id12" class="checkbox-other">
+                        <input class="main__block_checkbox" type="checkbox" id="checkbox-id12" />
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="main_total">
+                  <a class="main__total_text">Итого</a>
+                  <p class="main__total_price sum">0</p>
+                  <p class="main__total_price">₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itcss__item">
+            <!-- 5 шаг -->
+            <div class="itcss__item_style">
+              
+              <p class="main_subtitle">Заполните форму для связи с менеджером</p>
+
+                           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_nav">
+        <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev">Назад</button>
+        <button class="itcss__btn itcss__btn_next" role="button" data-slide="next">Далее</button>  
+      </div>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_blocks">
+        <div class="footer__block">
+          <ul id="" class="list">
+            <li><img class="logo" src="./img/Logotype.svg" alt="logo"></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="list">
+            <li class="footer__block">
+              <img class="footer___img" src="./img/geo.svg" alt="geolocation">
+              <a class="footer___text" href="#">г. Таганрог, ул. Заводская 20-3</a>
+            </li>
+            <li class="footer__block">
+              <img class="footer___img" src="./img/mail.svg" alt="email">
+              <a class="footer___text" href="#">info@eventline.pro</a>
+            </li>
+            <li class="footer__block">
+              <img class="footer___img" src="./img/phone.svg" alt="phone">
+              <a class="footer___text" href="#">8-000-000-00-00</a>
+            </li>
+            <li class="footer__block">
+              <img class="footer___img_sn" src="./img/telega.svg" href="#" alt="telegram">
+              <img class="footer___img_sn" src="./img/vk.svg" href="#" alt="vkontakte">
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <ul class="list">
+        <li><a class="footer___text policy" href="#">Политика конфиденциальности</a></li>
+        <li><a class="footer___text policy next" href="#">© 2023 ИП Федосов Максим Сергеевич</a></li>
+
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
